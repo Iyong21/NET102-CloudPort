@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1e8e1; /* Light wooden color */
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9; /* Milky white color */
+  color: #333;
+  padding: 10px 20px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+.logout-btn {
+  background-color: #f42d17;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.action-btn {
+  background-color: #2950e8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.file-area {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+/* Floating Upload Button */
+.floating-file-btn {
+position: fixed;
+bottom: 20px;
+right: 30px;
+z-index: 1000;
+}
+.floating-file-btn input[type="file"] {
+display: none;
+}
+.floating-file-btn label {
+display: inline-block;
+background-color: rgb(23, 32, 52);
+color: white;
+padding: 10px 20px;
+border-radius: 10px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+transition: background-color 0.3s ease;
+font-family: LEMONMILK-Light;
+font-size: 12px;
+}
+.floating-file-btn label:hover {
+background-color: #0056b3;
+}
+
+/* Folder container style */
+.folder-item {
+display: inline-block;
+margin: 10px;
+text-align: center;
+width: 100px;
+cursor: pointer;
+background-color: #f0f0f0;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease;
+}
+
+/* Folder hover effect */
+.folder-item:hover {
+transform: scale(1.05);
+background-color: #e6e6e6;
+}
+
+/* Folder icon */
+.folder-icon {
+width: 50px;
+height: 50px;
+margin: 10px auto;
+display: block;
+}
+
+/* Folder name text */
+.folder-text {
+font-size: 14px;
+color: #333;
+word-wrap: break-word;
+margin: 5px 0;
+}
+
+/* Delete button */
+.delete-btn {
+background-color: #ff4d4d;
+color: #fff;
+border: none;
+border-radius: 3px;
+padding: 5px;
+font-size: 12px;
+cursor: pointer;
+margin-bottom: 10px;
+transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+background-color: #ff1a1a;
+}
+
+.back-btn {
+background-color: #4CAF50; /* Green */
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+margin-top: 20px;
+}
+
+.back-btn:hover {
+background-color: #45a049;
+}
+
+.file-item {
+display: flex; /* Use flexbox to align items in a row */
+align-items: center; /* Vertically center items */
+gap: 10px; /* Add space between items */
+padding: 10px;
+border: 1px solid #ddd; /* Optional: for better structure */
+border-radius: 5px;
+margin-bottom: 10px; /* Add space between rows */
+background-color: #f9f9f9; /* Optional: add a light background */
+}
+
+.file-icon {
+width: 50px;
+height: 40px;
+margin: 0; /* Remove extra margin */
+}
+
+.file-link {
+font-size: 14px;
+color: #4567ee;
+text-decoration: none; /* Optional: remove underline */
+flex-grow: 1; /* Allow link to take up remaining space if needed */
+word-wrap: break-word;
+}
+
+.upload-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
