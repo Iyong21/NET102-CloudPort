@@ -218,7 +218,7 @@ fileInput.addEventListener('change', async (event) => {
     formData.append('parent_id', parentId);
 
     try {
-        const response = await fetch('http://localhost:3000/upload', {
+        const response = await fetch('https://net102-cloudport.onrender.com/upload', {
             method: 'POST',
             body: formData,
         });
